@@ -1,14 +1,14 @@
 [build]
-  publish = public/
-  command = echo Static site - no build needed
+  publish = "public/"
+  command = "echo 'Static site - no build needed'"
 
 [[redirects]]
-  from = /*
-  to = /index.html
+  from = "/*"
+  to = "/index.html"
   status = 200
 
 [[headers]]
-  for = /*
+  for = "/*"
   [headers.values]
-    X-Frame-Options = SAMEORIGIN
-    X-Content-Type-Options = nosniff
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
