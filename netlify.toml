@@ -1,0 +1,18 @@
+[build]
+  publish = "public/"
+  command = "echo 'Static site - no build needed'"
+
+[[redirects]]
+  from = "/admin*" 
+  to = "/admin.html"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

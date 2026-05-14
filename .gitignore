@@ -1,0 +1,9 @@
+node_modules/
+npm-debug.log*
+data/*.json
+data/images/*
+!data/images/.gitkeep
+data/targets.mind
+.bak
+*.bak
+.v1
